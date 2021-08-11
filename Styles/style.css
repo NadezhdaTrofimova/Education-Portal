@@ -238,6 +238,7 @@ hr {
     align-items: center;
     width: 200px;
     height: 45px;
+    cursor: pointer;
 }
 
 .forum-button {
@@ -246,6 +247,7 @@ hr {
     border: none;
     background-color: #1389E6;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .icon-button-submit {
@@ -339,6 +341,27 @@ hr {
     grid-column: 4;
     grid-row: 3 / 5;
     background-color: #1E3351;
+    display: flex;
+    align-items: center;
+}
+
+.forum-settings-container {
+    background-color: white;
+    padding: 10px 70px 10px 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 110px;
+    cursor: pointer;
+}
+
+.forum-settings-button {
+    border: none;
+    background-color: white;
+    font-family: Nunito, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #10376E;
+    cursor: pointer;
 }
 
 footer {
