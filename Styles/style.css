@@ -72,6 +72,7 @@ body {
     border: 2px solid #CBD3DE;
     overflow-y: scroll;
     border-radius: 2px;
+    padding-top: 20px;
 }
 
 .forum-message {
@@ -97,7 +98,7 @@ body {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    padding: 50px 50px 0 50px;
+    padding: 20px 50px 0 50px;
 }
 
 .message-info-container {
@@ -142,7 +143,7 @@ hr {
     opacity: 20%;
     border: none;
     height: 2px;
-    margin: 40px 40px 0 40px;
+    margin: 20px 40px 0 40px;
 }
 
 .enter-message-container {
@@ -150,6 +151,106 @@ hr {
     background-color: #EAEEF4;
     border: 2px solid #CBD3DE;
     border-top: none;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+}
+
+.enter-message-confirm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.text-message {
+    resize: none;
+    height: 80px;
+    border: none;
+    color: #041122;
+    font-family: Nunito, sans-serif;
+    padding: 7px 20px 7px 20px;
+    outline: none;
+    overflow: auto;
+    font-size: 16px;
+}
+
+.text-message::placeholder {
+    color: #818790;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+
+.forum-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.forum-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.forum-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #10376E;
+    border-radius: 1px;
+    box-shadow: 0 0 0.5px 0.5px #10376E;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.forum-checkbox:checked+label::before {
+    border-color: #10376E;
+    background-color: #10376E;
+    background-image: url(/image/checkbox-icon.png);
+}
+
+.text-forum-checkbox {
+    color: #10376E;
+    font-weight: bold;
+    font-family: Nunito, sans-serif;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.forum-button-container {
+    display: flex;
+    background-color: #1389E6;
+    border: none;
+    padding: 5px 30px 5px 30px;
+    border-radius: 1px;
+    box-shadow: 0 0 1px 1px #1389E6;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 45px;
+}
+
+.forum-button {
+    color: #FFFFFF;
+    font-family: Nunito, sans-serif;
+    border: none;
+    background-color: #1389E6;
+    font-size: 18px;
+}
+
+.icon-button-submit {
+    height: 12px;
+    width: 17px;
+    margin-left: 3px;
+    margin-top: 2px;
 }
 
 .user-date-container {
