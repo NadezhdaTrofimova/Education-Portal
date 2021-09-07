@@ -1,6 +1,6 @@
 # Education-Portal
 *Training project* 
-###Used technologies:
+### Used technologies:
 * HTML
 * CSS
 * JavaScript
